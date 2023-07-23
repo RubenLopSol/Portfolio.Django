@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Education(models.Model):
     image = models.ImageField(upload_to='education',  null=True, blank=True)
     title = models.CharField(max_length=250)

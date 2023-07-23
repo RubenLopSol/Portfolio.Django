@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Data(models.Model):
     image = models.ImageField(upload_to='data',  null=True, blank=True)
     name = models.CharField(max_length=250)

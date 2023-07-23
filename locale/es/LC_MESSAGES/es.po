@@ -1,0 +1,6 @@
+msgid "Texto a traducir"
+msgstr "Traducción del texto"
+
+msgid "La vida está llena de posibilidades, abrázalas con un corazón abierto y una mente curiosa."
+msgstr "Life is full of possibilities, embrace them with an open heart and a curious mind."
+

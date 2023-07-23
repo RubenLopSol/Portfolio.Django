@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'corsheaders',
+    'modeltranslation',
     'about_me',
     'hobby',
     'education',
@@ -123,13 +124,25 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
+IS_MONOLINGUAL= False
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True 
+
 USE_TZ = True
+
+# Rutas de los archivos de traducción
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+
+LANGUAGES = [
+    ('en', 'English'),  # Idioma predeterminado
+    ('es', 'Spanish'),  # Idioma español
+]
 
 
 # Static files (CSS, JavaScript, Images)
