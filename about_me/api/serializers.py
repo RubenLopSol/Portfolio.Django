@@ -6,4 +6,4 @@ from about_me.models import About
 class AboutSerializer(ModelSerializer):
     class Meta:
         model = About
-        fields = ['id', 'description', 'image', 'created', 'updated']
+        fields = ['id', 'description_en', 'description_es', 'image', 'created', 'updated']

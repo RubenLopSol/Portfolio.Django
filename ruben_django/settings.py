@@ -144,6 +144,12 @@ LANGUAGES = [
     ('es', 'Spanish'),  # Idioma español
 ]
 
+# MODELTRANSLATION_FALLBACK_LANGUAGES = {
+#     'default': ('en',),  # Usar inglés como idioma de respaldo para campos no traducidos
+# }
+
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

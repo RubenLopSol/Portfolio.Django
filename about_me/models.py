@@ -1,7 +1,8 @@
 from django.db import models
 
 class About(models.Model):
-    description = models.TextField()
+    description_en = models.TextField()
+    description_es = models.TextField()
     image = models.ImageField(upload_to='about',  null=True, blank=True)
 
 
@@ -15,5 +16,5 @@ class About(models.Model):
         ordering=['id']
 
     def __str__(self):
-        return self.description
+        return f"About {self.id}"
 

@@ -3,7 +3,8 @@ from django.db import models
 class Data(models.Model):
     image = models.ImageField(upload_to='data',  null=True, blank=True)
     name = models.CharField(max_length=250)
-    position = models.CharField(max_length=250)
+    position_en = models.CharField(max_length=250)
+    position_es = models.CharField(max_length=250)
     gitHub = models.URLField()
     linkedin = models.URLField()
     cv = models.FileField(upload_to='data')
@@ -18,4 +19,4 @@ class Data(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        return self.name
+        return f"Data {self.name}"

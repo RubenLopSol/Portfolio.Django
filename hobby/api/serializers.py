@@ -5,4 +5,4 @@ from hobby.models import Hobby
 class HobbySerializer(ModelSerializer):
     class Meta:
         model = Hobby
-        fields = ['id', 'title', 'description', 'image', 'created', 'updated']
+        fields = ['id', 'title_en', 'title_es', 'description_en', 'description_es', 'image', 'created', 'updated']

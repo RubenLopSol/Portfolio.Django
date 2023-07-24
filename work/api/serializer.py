@@ -5,4 +5,4 @@ from work.models import Work
 class WorkSerializer(ModelSerializer):
     class Meta:
         model = Work
-        fields = ['company', 'position', 'year', 'description', 'logo']
+        fields = ['company', 'position', 'year', 'description_en', 'description_es', 'logo']

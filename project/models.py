@@ -1,9 +1,11 @@
 from django.db import models
 
 class Project(models.Model):
-    title = models.CharField(max_length=250)
+    title_en = models.CharField(max_length=250)
+    title_es = models.CharField(max_length=250)
     image = models.ImageField(upload_to='project',  null=True, blank=True)
-    description = models.TextField()
+    description_en = models.TextField()
+    description_es = models.TextField()
     deployment = models.URLField(blank=True)
     code_front = models.URLField(blank=True)
     code_back = models.URLField(blank=True)
@@ -19,4 +21,4 @@ class Project(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return self.title
+        return f"Project {self.title_en}"
