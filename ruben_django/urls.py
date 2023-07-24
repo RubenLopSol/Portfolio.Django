@@ -32,6 +32,7 @@ from data.api.router import router_data
 from logos.api.router import router_logos
 
 
+
 schema_view = get_schema_view(
    openapi.Info(
       title="iCard-API-DOC",
